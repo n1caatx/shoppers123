@@ -1,0 +1,101 @@
+img {
+    height: 100vh; 
+  }
+  
+  .FirstSection {
+    position: relative;
+    width: 100%;
+    height: 80vh; 
+  }
+  
+  .heroImage {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+  }
+  
+  .textOverlay {
+    position: absolute;
+    top: 50%;
+    right: 0; 
+    transform: translateY(-50%); 
+    color: black; 
+    text-align: right; 
+    padding-right: 20px; 
+    margin-right: 50px;
+    width: 50%; 
+    max-width: 600px; 
+  }
+  
+  .textOverlay h1 {
+    font-size: 2rem; 
+    font-weight: bold;
+    margin: 0; 
+  }
+  
+  .textOverlay p {
+    font-size: 1.2rem;
+    line-height: 1.4; 
+    margin: 10px 0;
+  }
+  
+  .textOverlay button {
+    padding: 10px 20px;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    margin-right: 150px;
+  }
+  
+  .textOverlay button:hover {
+    background-color: #5a4b9c;
+    transition: all ease 0.2s;
+  }
+  
+  @media (max-width: 1024px) {
+    .textOverlay {
+      width: 60%;
+      margin-right: 30px; 
+    }
+    
+    .textOverlay button {
+      margin-right: 80px; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .textOverlay {
+      width: 70%; 
+      margin-right: 20px;
+    }
+  
+    .textOverlay button {
+      margin-right: 50px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .textOverlay {
+      width: 80%; 
+      margin-right: 10px; 
+      text-align: center; 
+      padding-right: 0; 
+    }
+  
+    .textOverlay h1 {
+      font-size: 1.5rem; 
+    }
+  
+    .textOverlay p {
+      font-size: 1rem; 
+    }
+  
+    .textOverlay button {
+      margin-right: 0; 
+      padding: 8px 16px; 
+    }
+  }
+  

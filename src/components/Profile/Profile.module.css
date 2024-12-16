@@ -1,0 +1,39 @@
+/* src/components/Profile/Profile.module.css */
+.profileContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .wishlistContainer {
+    margin-top: 30px;
+  }
+  
+  .wishlistContainer h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .wishlistItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .wishlistItem span {
+    font-size: 1.2em;
+  }
+  
+  .removeButton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .removeButton:hover {
+    background-color: darkred;
+  }
+  

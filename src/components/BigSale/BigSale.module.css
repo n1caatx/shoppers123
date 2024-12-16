@@ -1,0 +1,131 @@
+.cardSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cardImage {
+    flex: 1; 
+  }
+  
+  .cardImage img {
+    width: 100%; 
+    max-width: 500px; 
+    border-radius: 8px;
+    height: 300px;
+  }
+  
+  .cardContent {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .cardTitle {
+    font-size: 24px;
+    color: #7b3feb;
+    margin: 0;
+  }
+  
+  .cardSubtitle {
+    font-size: 32px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .cardMeta {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .cardAuthor {
+    color: #7b3feb;
+    font-weight: bold;
+  }
+  
+  .cardDescription {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin: 20px 0;
+  }
+  
+  .cardButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #7b3feb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+  }
+  
+  .cardButton:hover {
+    background-color: #5e2cbf;
+  }
+  
+  @media (max-width: 768px) {
+    .cardSection {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .cardImage {
+      max-width: 100%; 
+      margin-bottom: 20px; 
+    }
+  
+    .cardContent {
+      text-align: center; 
+    }
+  
+    .cardTitle {
+      font-size: 20px;
+    }
+  
+    .cardSubtitle {
+      font-size: 26px;
+    }
+  
+    .cardDescription {
+      font-size: 14px;
+    }
+  
+    .cardButton {
+      align-self: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cardSection {
+      padding: 15px;
+    }
+  
+    .cardTitle {
+      font-size: 18px;
+    }
+  
+    .cardSubtitle {
+      font-size: 22px;
+    }
+  
+    .cardDescription {
+      font-size: 12px;
+      line-height: 1.4;
+    }
+  
+    .cardButton {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
